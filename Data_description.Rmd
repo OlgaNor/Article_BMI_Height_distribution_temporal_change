@@ -1,0 +1,49 @@
+---
+title: "Data discription"
+author: "Parfenteva O."
+date: "2026-09-27"
+output: html_document
+---
+## Data
+
+This directory describes the datasets used in the analysis of temporal changes in BMI and height-for-age distributions among Russian children.
+
+## Data sources
+
+The analysis uses anthropometric data collected in two periods:
+
+First is "2012 dataset" — data used to develop the historical Russian GAMLSS reference model. Bioimpedance study of body composition in the Russian population / S.G. Rudnev, N.P. Soboleva, S.A. Sterlikov, D.V. Nikolaev, O.A. Starunova, S.P. Chernykh, T.A. Eryukova, V.A. Kolesnikov, O.A. Melnichenko, E.G. Ponomareva. M.: RIO TSNIIOIZ, 2014. – 493 p. – ISBN 5‐94116‐018‐6
+Second is "2025 dataset" — contemporary anthropometric data used to describe BMI and height-for-age distributions and to assess differences from the 2012 reference model.
+
+The datasets includes children aged  5–12.5 years from multiple Russian regions.
+
+##Variables
+
+The main variables required for the analyses include:
+
+age_in_months;
+sex;
+body_ _weight;
+body_height;
+age_in_years;
+region.
+
+Derived variables, including BMI, are generated within the analysis scripts where applicable.
+
+##Data availability
+
+Individual-level participant data are not included in this repository because they are subject to data protection and ethical restrictions.
+
+#Data processing
+
+The analysis scripts are provided to document the complete data-processing and statistical-modelling workflow. Researchers with appropriate access to the underlying data can reproduce the analyses using the scripts provided in the repository.
+
+##The data-processing workflow includes:
+
+removal of duplicate records;
+exclusion of biologically implausible values;
+multivariate quality control;
+exploratory data analysis;
+preparation of datasets for GAMLSS modelling.
+
+The corresponding procedures are documented in the numbered R scripts in the main repository.
